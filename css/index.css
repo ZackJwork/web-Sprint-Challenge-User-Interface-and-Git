@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,8 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+
+ /* General Styling */
 * {
+    max-width:100%;
     box-sizing: border-box;
+    font-size: 62.5%;
+    /* border:1px solid black; */
+    text-decoration: none;
 }
 
 html, body {
@@ -57,18 +63,56 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.3rem;
 }
 
+/* Element Styling */
 .container {
-    width: 800px;
+    width: 95%;
     margin: 0 auto;
+    /* border:2px solid red */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 4rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    width:20%;
+    height: 90%;
+}
+a:visited, a:hover, a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+#Topnav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    width: 80%;
+    margin:1%;
+    
+}
+
+.imgcontainer img{
+    display: block;
+    margin: 2% auto;
+    width: 80%;
+
 }
 
 .top-content {
@@ -76,23 +120,25 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 35%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    border-top: 1px dashed black;
     border-bottom: 1px dashed black;
+    width: 80%;
+    margin: 1% auto;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+    padding:0 1%;
+    margin-top: 2%;
 }
 
 .middle-content .boxes {
@@ -103,23 +149,55 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
+    height: 10rem;
+    margin: 3% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.box1{
+    background: teal;
+}
+.box2{
+    background-color: gold;    
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
+}
+
 .bottom-content {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    margin: 0 2% 20px;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding:0 1%;
+    width: 33%;
 }
 
 .bottom-content .text-container:last-child {
@@ -127,20 +205,72 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     background: black;
+    margin-top: 1%;
 }
 
 footer nav {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
+}
+footer a:visited, a:hover, a:focus {
+    color: white;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+/* END INDEX.HTML */
+
+/* START ELEMENT SYTLING ABOUT PAGE */
+
+.abouttext-container{
+    width: 80%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    border-bottom:1px dashed black;
+}
+.abouttext-container h2{
+    font-size: 2rem;
+}
+.abouttext-container p{
+    font-size: 1.5rem;
+}
+
+.aboutcontainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abox{
+    width: 40%;
+    margin:2% auto;
+    padding-bottom: 2%;
+    border-bottom:1px dashed black;
+}
+
+.aboximg{
+    text-align: center;
+    margin: 4%;
+}
+
+.abox h3{
+    font-size: 1.5rem;
+}
+button{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin:5% 0;
+}
+
+.bottomabout{
+    margin:2% auto;
+    padding:0 2%;
+    width: 80%;
 }
